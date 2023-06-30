@@ -1,0 +1,15 @@
+[tool.poetry]
+name = "reminderbot"
+version = "0.1.0"
+description = ""
+authors = ["shunsei"]
+readme = "README.md"
+
+[tool.poetry.dependencies]
+python = "^3.10"
+todoist-api-python = "^2.0.2"
+discord-py = "^2.3.1"
+
+[build-system]
+requires = ["poetry-core"]
+build-backend = "poetry.core.masonry.api"
