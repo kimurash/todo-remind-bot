@@ -1,6 +1,6 @@
 # todo_reminder_bot
 [Todoist](https://todoist.com/ja)から
-期限が今日に設定されているタスクを選抜してDiscordに通知するBot  
+期限が今日に設定されているタスクを選抜してDiscordに通知するBot
 $\rightarrow$ 
 [開発記事](https://esa-pages.io/p/sharing/19485/posts/15/e201cf1359bd9cbc3561.html)
 
