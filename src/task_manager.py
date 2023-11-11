@@ -6,7 +6,7 @@ from todoist_api_python.models import Task
 
 
 class TaskManager:
-    __TODOIST_TOKEN = os.getenv('TODOIST_TOKEN')
+    __TODOIST_TOKEN = os.getenv('TODOIST_API_TOKEN')
 
     def __init__(self) -> None:
         """
