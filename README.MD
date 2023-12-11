@@ -1,7 +1,6 @@
 # todo_reminder_bot
-[Todoist]([Todoist]) から期限が今日に設定されているタスクを選抜して
-Discordに通知するBot  
-$\rightarrow$ [開発記事]([article])
+[Todoist]([Todoist]) から期限が今日に設定されているタスクを選抜してDiscordに通知するBot
+- [開発記事]([article])
 
 ## 使用しているライブラリ
 - [discord.py]([discord.py])
