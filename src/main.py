@@ -1,8 +1,12 @@
 import os
 import discord
 from discord.ext import tasks
+from dotenv import load_dotenv
 
 from task_manager import TaskManager
+
+# .envから環境変数を取得する
+load_dotenv()
 
 # Intentsを設定すると受け取るイベントを制限できる
 intents = discord.Intents.default()
@@ -40,8 +44,8 @@ async def send_reminder():
     # フッターに開発者の情報を入れる
     embed.set_footer(text='made by shunsei',)
 
-    channel = client.get_channel(1017647262136029185) # テスト用サーバの通知チャンネル
-    # channel = client.get_channel(1022542303472123934) # 勉強用サーバの通知チャンネル
+    channel_id = os.getenv('DISCORD_TEST_CHANNEL_ID')
+    channel = client.get_channel(int(channel_id))
     await channel.send(embed=embed)
 
 # Botの起動とDiscordサーバーへの接続

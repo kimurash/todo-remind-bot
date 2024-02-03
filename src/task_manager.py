@@ -1,9 +1,12 @@
 import os
 import datetime
 
+from dotenv import load_dotenv
 from todoist_api_python.api import TodoistAPI
 from todoist_api_python.models import Task
 
+# .envから環境変数を取得する
+load_dotenv()
 
 class TaskManager:
     __TODOIST_TOKEN = os.getenv('TODOIST_API_TOKEN')
@@ -18,8 +21,12 @@ class TaskManager:
         """
         タスクを取得して期限が今日までのものを選抜する
         """
-        date_now = datetime.datetime.today() # 現在の時刻を取得
-        tasks = self.__api.get_tasks(project_id=2315320462) # プロジェクトからタスクを取得
+        # 現在の時刻を取得
+        date_now = datetime.datetime.today()
+        # プロジェクトIDを取得
+        project_id = os.getenv('TODOIST_PROJECT_ID')
+        # プロジェクトからタスクを取得
+        tasks = self.__api.get_tasks(project_id=project_id)
 
         today_tasks = [] # 期限が今日のタスク
         for task in tasks:
