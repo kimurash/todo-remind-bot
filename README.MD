@@ -6,6 +6,11 @@
 - [discord.py]([discord.py])
 - [todoist-api-python]([todoist-api-python])
 
+## 実行方法
+```
+python main.py
+```
+
 ## ディレクトリ構成
 ```
 ┬
@@ -18,11 +23,6 @@
     │  main.py
     │  task_manager.py
     ┴
-```
-
-## 実行方法
-```
-python main.py
 ```
 
 [Todoist]:https://todoist.com/ja
