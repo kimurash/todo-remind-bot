@@ -1,4 +1,4 @@
-# todo_reminder_bot
+# todo-reminder-bot
 [Todoist]([Todoist]) から期限が今日に設定されているタスクを選抜してDiscordに通知するBot
 - [開発記事]([article])
 
